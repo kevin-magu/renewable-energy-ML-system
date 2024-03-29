@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+        <header>
+        <nav>
+            <div class="logo">Algorithim-X</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visuals.html">Graphs</a></li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h2>REPORT GENERATION BASED ON PREDICTIVE ANALYSIS</h2>
+    <div class="dashboard-container">
+        <div class="selection">
+            <label for="prediction-type">Choose Prediction Type:</label>
+            <select id="prediction-type">
+                <option value="cancer">Cancer</option>
+                <option value="malaria">Malaria</option>
+            </select>
+        </div>
+        <div class="resource-input">
+            <label for="resource-type">Resource Type:</label>
+            <select id="resource-type" class="resourse-type">
+                <option value="beds">Beds</option>
+                <option value="machines">Machines</option>
+                <option value="medicine">Medicine</option>
+                <!-- Add more resource types as needed -->
+            </select>
+            <label for="resource-quantity" class="resourse-quantity">Quantity:</label>
+            <input type="number" id="resource-quantity" placeholder="Enter quantity">
+        </div>
+        <button id="generate-report">Provide Report</button>
+        <div class="report">
+            <h2>Resource Report</h2>
+            <div id="loader" class="loader"></div>
+            <p id="report-content">The required resources will be displayed here.</p>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
